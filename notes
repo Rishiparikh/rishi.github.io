@@ -1,0 +1,1 @@
+scp  -P 8041 ftpuser@128.32.192.10:/home/ftpuser/farmbotsony/snc-22070119591500.jpg ./
