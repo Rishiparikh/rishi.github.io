@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -20,7 +19,7 @@
 					<div id="main">
 						<div class="inner">
 
-
+							
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
@@ -28,20 +27,16 @@
 											<h1>Rishi Parikh</h1>
 											<p>Computer Science Student and Graduate Researcher @ Berkeley AI</p>
 										</header>
-										<b>Currently looking for fulltime research engineer opportunities in robotics, ML, or computer vision starting Summer 2023. </b>
-										<br />  <br />
-										<p>Previously software engineering intern @ Nextdoor, 8th Wall, and Teaching Assistant for AI</p>
-										<p>Hi! My name is Rishi and I am an incoming M.S. student studying computer science at UC Berkeley with an interest in Artificial Intelligence and robotics.
-											I enjoy building and programming robots. Currently my research focuses around sim2real (simulation to real) transfer.
-											I am passionate about automation and it's potential impact on the world. As more complex models require increasingly more data and demonstrations,
-											I am interested in studying how to learn in simulation and deploy in real.
+										<p>
+											Hi! My name is Rishi and I recently graduated from the University of California, Berkeley (Go Bears!) with a Masters in Electrical Engineering and Computer Science and research emphasis on artificial intellingence and computer vision. 
+											Equipped with an understanding of these cutting-edge technologies and passion to learn, I am excited to apply my skills to solve complex problems and create innovative products. 
 											<br />  <br />
-											More information on my current projects can be found on the left.
+											More information on my current projects can be found on the below.
 										</p>
+										<b>Currently looking for fulltime research engineer opportunities in robotics, ML, or computer vision.</b>
+										<br />
+										<br />
 										<p><a href="https://drive.google.com/file/d/1PA2XvmkxTYmrmUks64Q3hz43soIHMPo1/view?usp=sharing", target="_blank">Resume</a> || <a href="https://www.linkedin.com/in/rishiparikh01/", target="_blank">Linkedin</a> || Email: RishiParikh@berkeley.edu </p>
-										<ul class="actions">
-											<!-- <li><a href="#" class="button big">Learn More</a></li> -->
-										</ul>
 									</div>
 									<span class="image object">
 										<img src="images/homepage_img.jpg" height="330", width="217"/>
@@ -49,7 +44,7 @@
 								</section>
 
 							<!-- Section -->
-								<section>
+								<!-- <section>
 									<header class="major">
 										<h2>Summary</h2>
 									</header>
@@ -83,7 +78,7 @@
 											</div>
 										</article>
 									</div>
-								</section>
+								</section> -->
 
 
 							<!-- Section -->
@@ -91,27 +86,31 @@
 									<header class="major">
 										<h2>Projects</h2>
 									</header>
-									<div class="posts">
+									<div>
 										<article>
-											<a href="https://github.com/BerkeleyAutomation/AlphaGarden" target = "_blank" class="image"><img src="images/alpha garden.png" alt="" target="_blank" /></a>
+											<center><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-120.html" target = "_blank" class="image"><img src="images/auto_pipeline.png" width=75% alt="" target="_blank" /></a></center>
 											<h3>AlphaGarden</h3>
-											<p>
-												Researching under Ken Goldberg about the applications of AI in agriculture. Explored using nueral networks to identify plant types and track plant growth in a gardern (as shown above). Added augmented data to generate additional data from a single sample, and applied post-processing scripts to further improve IoU. Achieved a mean IoU of 0.8.
-												<br/>
-												Currently helping work on a simulator to learn real world policies to improve garden coverage and diversity in a fraction of the time. Studying plant interaction with each other and the environment (soil, water, sunlight)
-												<br/>
-												<br/>
-												Publication: ICRA 2021 Learning Seed Placements and Automation Policies for Polyculture Farming with Companion Plants
-											</p>
+												Applying machine learning and computer vision to automate polyculture gardening. 
+												<ul>
+													<li><b>Simulation</b> The AlphaGardenSim is a fast, first order simulator, that incorporates
+														parameterized individual plant growth models, companion plant effects and inter-plant
+														dynamics, and was leveraged to learn irrigation and pruning policies using deep RL. 
+													</li>
+													<li><b>Real to Sim</b> Computer vision models and algorithms to interface between the physical garden and simulation.</li>
+													<li><b>Sim to Real</b> Custom hardware and action planning algorithms are used to enact both learned and analytical policies from AlphaGardenSim into
+														the real world.</li>
+													<li><b>Real World Experiments</b> We present 8, 60 day garden cycles, where we compare
+														different pruning and irrigation policies versus expert human horticulturalists.</li>
+												  </ul>
 											<ul class="actions">
-												<li><a href="https://robotics.ucmerced.edu/sites/robotics.ucmerced.edu/files/page/documents/icra2021.pdf" target="_blank" class="button">More</a></li>
+												<li><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-120.html" target="_blank" class="button">More</a></li>
 											</ul>
 										</article>
 
 
 										<article>
-											<a href="https://sites.google.com/view/learning-switching-criteria" class="image" target="_blank"><img src="images/lsc2.png" alt="" target="_blank"/></a>
-											<a href="https://sites.google.com/view/learning-switching-criteria" class="image" target="_blank"><img src="images/LSC1.png" alt="" target="_blank"/></a>
+											<center><a href="https://sites.google.com/view/learning-switching-criteria" class="image" target="_blank"><img src="images/lsc2.png" width=75% alt="" target="_blank"/></a></center>
+											<center><a href="https://sites.google.com/view/learning-switching-criteria" class="image" target="_blank"><img src="images/LSC1.png" width=75% alt="" target="_blank"/></a></center>
 											<h3>Learning Switching Criteria for Sim2Real Transfer</h3>
 											<p>
 												Learning in the real world is expensive. It takes a long time to run real world robot experiments, and has potential to break parts or cause damage.
@@ -128,7 +127,7 @@
 										</article>
 
 										<article>
-											<a href="https://cal-cs184-student.github.io/sp22-project-webpages-yersultan-17/soccersim/" class="image"><img src="images/soccersim.png" alt="" /> </a>
+											<a href="https://cal-cs184-student.github.io/sp22-project-webpages-yersultan-17/soccersim/" class="image"><center><img src="images/soccersim.png" alt="" width=75% /> </center> </a>
 											<h3>Computer Graphics</h3>
 											<p>Last school year I took a computer graphics class where I explored rendering and graphics using C++. Here I worked on several projects including a raytracer,
 												 first order cloth simulator, and more. In this class, I learned a lot about cool rendering and graphics techniques, as well as the geometry behind it.
@@ -147,11 +146,11 @@
 										</article>
 
 										<article>
-											<a>
+											<center><a>
 												<video height="300px" controls>
 													<source src="images/robot vision tracking.mp4", type="video/mp4"/>
 												</video>
-											</a>
+											</a></center>
 											<!-- <a class="image">
 												<iframe width="500" height="315" src="https://www.youtube.com/embed/4NHu5V4c18o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 											<h3>Robotics</h3>
@@ -188,19 +187,20 @@
 										<h2>Publications</h2>
 									</header>
 								<li>
+								Simeon Adebola*, <b>Rishi Parikh*</b>, Mark Presten, Satvik Sharma, Shrey Aeron, Ananth Rao,  Sandeep Mukherjee, Tomson Qu, Christina Wistrom, Eugen Solowjow, Ken Goldberg
+								<br>
+								"Systematically Comparing Growth and Irrigation Performance: The AlphaGarden vs. Professional Horticulturalists" in
+								Conference on Robotics and Automation (ICRA)
+								<br>
+								* = Equal Contribution
+								</li>
+								<br>
+								<li>
 								Mark Presten <b>Rishi Parikh</b>, Shrey Aeron, Sandeep Mukherjee, Simeon Adebola, Satvik Sharma, Mark Theis, Walter Teitelbaum, and Ken Goldberg
 								<br>
 								"Automated Pruning of Polyculture Plants; Mark Presten" in 2022 International Conference on Automation Science and Engineering (CASE)
 								</li>
 								<br>
-								<li>
-								Simeon Adebola*, <b>Rishi Parikh*</b>, Mark Presten, Satvik Sharma, Shrey Aeron, Ananth Rao,  Sandeep Mukherjee, Tomson Qu, Christina Wistrom, Eugen Solowjow, Ken Goldberg
-								<br>
-								* = Equal Contribution
-								<br>
-								"Systematically Comparing Growth and Irrigation Performance: The AlphaGarden vs. Professional Horticulturalists" submitted to 2023 IEEE International Confer-
-								ence on Robotics and Automation (ICRA)
-								</li>
 								<br>
 
 								<li>
